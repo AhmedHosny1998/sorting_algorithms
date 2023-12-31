@@ -1,6 +1,14 @@
 #include "sort.h"
 
-
+/**
+ * merge_compare - compares merges
+ * @array: the integer array to sort
+ * @start: the start index
+ * @stop: the stop index
+ * @new: the output array
+ *
+ * Return: void.
+ */
 
 void merge_compare(int *array, size_t start, size_t stop, int *new)
 {
@@ -31,6 +39,16 @@ void merge_compare(int *array, size_t start, size_t stop, int *new)
 
 }
 
+/**
+ * merge_sort_top_down - sorts top-down recursively
+ * @array: the integer array to sort
+ * @start: the start index
+ * @stop: the stop index
+ * @new: the output array
+ *
+ * Return: void.
+ */
+
 void merge_sort_top_down(int *array, size_t start, size_t stop, int *new)
 {
     size_t midel;
@@ -47,6 +65,14 @@ void merge_sort_top_down(int *array, size_t start, size_t stop, int *new)
 
 
 }
+
+/**
+ * merge_sort - sorts by merge sort algorithm
+ * @array: the integer array to sort
+ * @size: the size of the array
+ *
+ * Return: void.
+ */
 
 void merge_sort(int *array, size_t size)
 {
